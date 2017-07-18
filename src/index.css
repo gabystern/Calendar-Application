@@ -4,10 +4,27 @@ body {
   font-family: sans-serif;
 }
 
-.hour{
-  display: block;
-  width: 200px;
-  float:left;
+table {
+  width: 800px;
+  background-color: #f9f2f7;
+  border: none;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+th {
+  background-color: #ffffff;
+  border: none !important;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  text-align: right;
+  width: 75px;
+  padding-right: 5px;
+}
+
+td {
+  padding: 10px;
 }
 
 .appt-each {
@@ -21,53 +38,15 @@ body {
   margin-left:100px;
 }
 
-#time {
-  width: 100px;
-}
-
-table {
-  width: 800px;
-  background-color: #f9f2f7;
-  border: none;
-}
-
-th {
-  background-color: #ffffff;
-  border: none !important;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-right: 10px;
-  text-align: right;
-  width: 75px;
-}
-
-table {
-  /*border-collapse: collapse;*/
-  margin-top: 10px;
-}
-
-th {
-  border-collapse: collapse;
-  padding-right: 5px;
-}
-
-td {
-  padding: 10px;
-}
-
-.spacing{
-  background-color: #ffffff;
-  width: 10px;
-}
-
 .color-spacing {
   width: 10px;
 }
 
-td#0.appt-each{
-  width: 100%;
-}
-
 strong {
   color: #4169E1;
+}
+
+h2 {
+  padding-top: 10px;
+  margin-left: 10px;
 }

@@ -17,7 +17,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <table cellpadding="10">
+        <h2>Tuesday, July 18th, 2017</h2>
+        <table>
           {this.state.hours.map((hour) => <TimeRows time={hour} appointments={this.state.appointments}/>)}
         </table>
       </div>
