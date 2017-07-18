@@ -12,12 +12,18 @@ class App extends Component {
       {name:"Go for a run", location: "Prospect Park", start: "18:30", end: "19:30"},
       {name:"Dinner", location: "TBD", start: "19:00", end: "20:00"}]
     }
+    this.dateHeader = this.dateHeader.bind(this)
+  }
+
+  dateHeader(){
+    var currentTime = new Date();
+    return currentTime.toLocaleString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric'});
   }
 
   render() {
     return (
       <div className="App">
-        <h2>Tuesday, July 18th, 2017</h2>
+        <h2>{this.dateHeader()}</h2>
         <table>
           {this.state.hours.map((hour) => <TimeRows time={hour} appointments={this.state.appointments}/>)}
         </table>
