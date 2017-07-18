@@ -6,20 +6,63 @@ body {
 
 .hour{
   display: block;
-  width: 100px;
+  width: 200px;
   float:left;
 }
 
-.appt {
-  width: 100px;
-  position: relative;
-}
-
 .appt-each {
-  width: 100px;
-  background-color:#ADD8E6 ;
+  width: 300px;
+  background-color: #ffffff;
+  border-style: solid;
+  border-left: solid #4169E1;
+  border-bottom: none;
+  border-right: none;
+  border-top: none;
+  margin-left:100px;
 }
 
 #time {
   width: 100px;
+}
+
+table {
+  width: 800px;
+  background-color: #fcedf8;
+  border: none;
+}
+
+th {
+  background-color: #ffffff;
+  border: none !important;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  text-align: right;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+td {
+  margin-left: 15px;
+  padding: 10px;
+}
+
+.spacing{
+  background-color: #ffffff;
+  width: 10px;
+}
+
+.color-spacing {
+  width: 10px;
+}
+
+td#appt1.appt-each{
+  column-span: '2';
+}
+
+strong {
+  color: #4169E1;
 }

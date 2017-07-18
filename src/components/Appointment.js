@@ -4,7 +4,7 @@ const Appointment = (props) => {
   console.log(props)
 
   return(
-    <div className='appt'>{props.appointment.name}</div>
+    <div className='appt'><strong>{props.appointment.name}</strong><br></br>{props.appointment.location}</div>
   )
 }
 
