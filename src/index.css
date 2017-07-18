@@ -3,3 +3,23 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.hour{
+  display: block;
+  width: 100px;
+  float:left;
+}
+
+.appt {
+  width: 100px;
+  position: relative;
+}
+
+.appt-each {
+  width: 100px;
+  background-color:#ADD8E6 ;
+}
+
+#time {
+  width: 100px;
+}
