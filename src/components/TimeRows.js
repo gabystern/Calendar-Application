@@ -41,7 +41,7 @@ class TimeRows  extends Component {
         parsedTime.setHours(hour, minutes)
         let matchTime = parsedTime.toLocaleString('en-US', { hour: 'numeric', hour12: true, minute: 'numeric'});
         if (start === matchTime){
-          return (<td rowSpan={duration} id={this.props.appointments[i].name} className="appt-each"><Appointment appointment={this.props.appointments[i]}/></td>)
+          return (<td rowSpan={duration} id={i} className="appt-each"><Appointment appointment={this.props.appointments[i]}/></td>)
         }
       }
   }
@@ -50,7 +50,6 @@ class TimeRows  extends Component {
     return(
       <tr>
         <th align="left">{this.defineTimes()}</th>
-        <td className="spacing"></td>
         <td className="color-spacing"></td>
         {this.createAppt()}
         <td className="color-spacing"></td>
